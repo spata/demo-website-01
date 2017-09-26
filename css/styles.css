@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: 200;
+}
+
+h2, h4 {
+  padding-top: 1em;
+  font-weight: 700;
+}
+
+           /*website structure
+            -------------------------------------------------------------- */
+section h2 {
+  padding: 1em;
+  text-align: center;
+}
+
+div.subtitle {
+  padding: 2em;
+  text-align: center;
+}
+
+#dashboard div.subtitle {
+  background-color: #348ea9;
+}
+
+#about div.subtitle {
+  background-color: #ef4846;
+}
+
+#contact div.subtitle {
+  background-color: #348ea9;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+           /*content structure/display
+            -------------------------------------------------------------- */
+
+.row {
+  width: 70%;
+  margin-right: 15%;
+  margin-left: 15%;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.small {
+  width: 50%;
+  margin-right: 25%;
+  margin-left: 25%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.break {
+  padding: 1em;
+}
+
+.graphic {
+            /*text-align: center;*/
+  margin: 0 25%;
+  width: 50%;
+  padding: 1em;
+}
+
+            /*landing
+            -------------------------------------------------------------- */
+
+.landing {
+  padding-top: 14em;
+  padding-bottom: 14em;
+  background: url("../img/bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.landing-inner {
+  width: 50%;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+.landing-inner h1 {
+  font-weight: 700;
+  padding: 1em;
+}
+
+.landing-inner p {
+  color: white;
+  text-align: center;
+  font-weight: 200;
+}
+
+/*header
+-------------------------------------------------------------- */
+
+header {
+  background-color: white;
+  padding: 1em;
+  border-bottom: 0.063rem solid rgba(0, 0, 0, 0.2);
+            /*margin-bottom: 3.5%;*/
+  overflow: hidden;
+  font-family: "colfax-web",sans-serif;
+  line-height: 1;
+  font-size: 0.78rem;
+  height: 10em;
+}
+
+header a {
+  text-decoration: none;
+}
+
+#nav ul {
+  margin: 1.8em 0 0;
+  text-align: center;
+  padding-left: 0;
+}
+
+#nav ul li {
+  display: inline;
+  margin-right: 0.875em;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+#nav ul li:last-child {
+  margin-right: 0;
+}
+
+#nav li a {
+  color: #3a3a3a;
+  padding: 0.5em 0;
+}
+
+#nav a:hover {
+  color: #EE4938;
+}
+
+.logo {
+  margin: 0 auto;
+  display: block;
+}
+
+/* media queries*/
+
+@media (min-width: 400px) {
+  #header {
+    height: 4em;
+  }
+
+  .logo {
+    margin: 0 auto;
+    display: inline-block;
+  }
+
+  #nav ul {
+    float: right;
+    margin-top: 1.7em;
+  }
+}
+
+@media (min-width: 600px) {
+  #header {
+    padding: 1.125em 2em 1.125em 1.5em;
+  }
+
+  #nav ul {
+    margin-top: 2.125em;
+  }
+
+  #nav ul li {
+    margin-right: 1.3em;
+  }
+}
+
+@media (min-width: 800px) {
+  #header {
+    padding: 1.125em 3em 1.125em 1.5em;
+    border-bottom: none;
+    font-size: 0.813rem;
+  }
+}
+
+@media (min-width: 1250px) {
+  #header {
+    font-size: 0.875rem;
+  }
+}
+
+
+/*footer
+-------------------------------------------------------------- */
+
+#footer {
+  background-color: #348ea9;
+  color: white;
+}
+
+#footer p {
+  padding-top: 1em;
+  font-weight: 200;
+}
+
+.footer-inner {
+  width: 70%;
+  margin-right: 15%;
+  margin-left: 15%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.footer-left {
+  dislay: block;
+  text-align: left;
+}
+
+.copy {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+            /*blockquote
+            -------------------------------------------------------------- */
+
+.quote-box {
+  height: 10em;
+  background: url("../img/pills.jpg") center no-repeat;
+  background-size: 100%;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
+}
+
+.quote {
+  border-bottom: 2px solid $ofsted-secondary;
+  border-top: 2px solid $ofsted-secondary;
+  color: white;
+  font-weight: 200;
+  font-size: 1em;
+  margin: 0;
+  overflow: hidden;
+  padding: 1em 0;
+  p {
+            float: left;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin: 0 0 0.3em 0;
+}
+
+cite {
+  float: right;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 2.5em;
+}
+            }
+
+.quote-text {
+  float: left;
+  font-size: 5em;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 0.8em;
+  margin-left: -0.05em;
+  max-height: 0.4em;
+}
+
+/* media queries*/
+
+@media (min-width: 400px) {
+  .quote-box {
+    height: 15em;
+  }
+
+  .quote {
+    font-size: 2em;
+  }
+
+  .quote-text {
+    float: left;
+    font-size: 7em;
+  }
+}
+
+            /*contact form
+            -------------------------------------------------------------- */
+input[type=text], input[type=email],select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #348ea9;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ef4846;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #dcf1eb;
+  padding: 20px;
+  margin-top: 4em;
+}
+            
+            /*social icons
+            -------------------------------------------------------------- */
+.fa {
+  padding: 0.4em;
+  font-size: 18px;
+  width: 1em;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
