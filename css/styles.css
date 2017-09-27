@@ -79,8 +79,8 @@ div.subtitle {
             -------------------------------------------------------------- */
 
 .landing {
-  padding-top: 14em;
-  padding-bottom: 14em;
+  padding-top: 5em;
+  padding-bottom: 5em;
   background: url("../img/bg.jpg") no-repeat;
   background-size: cover;
 }
@@ -100,6 +100,17 @@ div.subtitle {
   color: white;
   text-align: center;
   font-weight: 200;
+}
+
+@media (min-width: 400px) {
+  
+
+.landing {
+  padding-top: 14em;
+  padding-bottom: 14em;
+  background: url("../img/bg.jpg") no-repeat;
+  background-size: cover;
+}
 }
 
 /*header
